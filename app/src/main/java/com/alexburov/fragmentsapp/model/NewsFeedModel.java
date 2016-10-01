@@ -41,25 +41,6 @@ private ArrayList<News> cachedNews;
         return newsContentView;
     }
 
-    //    @Override
-//    public String getNewsHeader(int newsID) {
-//        if(null==cachedNews) return null;
-//        if(cachedNews.size()<newsID) return null;
-//        return cachedNews.get(newsID).getTitle();
-//    }
-//
-//    @Override
-//    public String getNewsText(int newsID) {
-//        if(null==cachedNews) return null;
-//        if(cachedNews.size()<newsID) return null;
-//        return cachedNews.get(newsID).getText();
-//    }
-//
-//    @Override
-//    public void updateNews(JSONObject jsonNews) {
-//
-//    }
-
     void createTempModel(){
         cachedNews= new ArrayList<>();
         News testnew;

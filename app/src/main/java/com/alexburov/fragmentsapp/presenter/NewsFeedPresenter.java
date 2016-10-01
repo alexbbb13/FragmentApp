@@ -23,9 +23,6 @@ import java.util.ArrayList;
 public class NewsFeedPresenter implements NewsFeedI{
     static NewsFeedPresenter instance;
     android.support.v4.app.FragmentManager fragmentManager;
-    static int FRAGMENT_LIST =1;
-    static int FRAGMENT_NEWS_TEXT =2;
-
 
     private NewsFeedPresenter(){
     }
