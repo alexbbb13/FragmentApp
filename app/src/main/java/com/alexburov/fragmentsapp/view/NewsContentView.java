@@ -26,9 +26,6 @@ public class NewsContentView extends Fragment implements NewsContentI{
     ListView lvNews;
     @Nullable
     @Override
-
-
-
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_list, container, false);
         lvNews = (ListView) view.findViewById(R.id.lvNews);
@@ -61,7 +58,7 @@ public class NewsContentView extends Fragment implements NewsContentI{
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
                 // Create new fragment and transaction
-                NewsFeedPresenter.getInstance().
+                NewsFeedPresenter.getInstance().showNewsText(position);
 
             }
       });

@@ -14,5 +14,5 @@ public interface NewsFeedI {
     ArrayList<News> getNewsList();
     void startPresenting(AppCompatActivity activity);
     void updateNewsList();
-    //void showNewsText(int newsID);
+    void showNewsText(int newsID);
 }
